@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,10 +8,554 @@
     <title>Document</title>
     <!-- Link css -->
     <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/custom.css">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome/css/all.min.css">
 </head>
+
 <body>
-    
+    <div id="page-wrapper">
+        <div id="main">
+            <div class="container">
+                <div class="bg-top"></div>
+                <div class="bg-bottom"></div>
+                <!-- Content -->
+                <div class="tab-content" id="pills-tabContent">
+                    <!-- Home -->
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="home-tab">
+                        <header>
+                            <div class="logo">
+                                <a href="#"><img src="./assets/images/logo.png" alt="logo"></a>
+                            </div>
+                            <p class="title">Chẵn lẽ momo tự động 5s</p>
+                            <p class="sub-title">Uy tín - nhanh gọn - tự động</p>
+                        </header>
+                        <div class="notify">
+                            <button class="btn btn-primary">Thông báo</button>
+                        </div>
+                        <div id="tab-type">
+                            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link active" id="chanle-tab" data-toggle="pill" href="#chanle"
+                                        role="tab" aria-controls="chanle" aria-selected="true">Chẵn lẽ</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link " id="chanle2-tab" data-toggle="pill" href="#chanle2" role="tab"
+                                        aria-controls="chanle2" aria-selected="false">Chẵn lẽ 2</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link " id="taixiu-tab" data-toggle="pill" href="#taixiu" role="tab"
+                                        aria-controls="taixiu" aria-selected="false">Tài xỉu</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link " id="taixiu2-tab" data-toggle="pill" href="#taixiu2" role="tab"
+                                        aria-controls="taixiu2" aria-selected="false">Tài xỉu 2</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link " id="motphanba-tab" data-toggle="pill" href="#motphanba"
+                                        role="tab" aria-controls="motphanba" aria-selected="false">1 phần 3</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link " id="tong3so-tab" data-toggle="pill" href="#tong3so" role="tab"
+                                        aria-controls="tong3so" aria-selected="false">Tổng 3 số</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link " id="h3-tab" data-toggle="pill" href="#h3" role="tab"
+                                        aria-controls="h3" aria-selected="false">H3</a>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <a class="nav-link " id="lo-tab" data-toggle="pill" href="#lo" role="tab"
+                                        aria-controls="lo" aria-selected="false">Lô</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+                        <h3 class="tab-name">Nhiệm vụ ngày</h3>
+                        <div class="tab-content" id="pills-types">
+                            <div class="tab-pane fade show active" id="chanle" role="tabpanel"
+                                aria-labelledby="chanle-tab">
+                                <div class="tutorial border-main">
+                                    <h3 class="title">HƯỚNG DẪN CHƠI</h3>
+                                    <p class="intro">Chẵn lẻ là game tính kết quả bằng 1 số cuối của mã giao dịch chuyển
+                                        tiền
+                                        vào một trong
+                                        những số điện thoại sau :</p>
+                                    <table class="table table-borderless ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Số điện thoại</th>
+                                                <th scope="col">Cược tối đa</th>
+                                                <th scope="col">Cược tối thiểu</th>
+                                                <th scope="col">Giao dịch</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span class="full">100/100</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span class="full">100/100</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span>10/100</span></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="chanle2" role="tabpanel" aria-labelledby="chanle2-tab">
+                                <div class="tutorial border-main">
+                                    <h3 class="title">HƯỚNG DẪN CHƠI</h3>
+                                    <p class="intro">Chẵn lẻ là game tính kết quả bằng 1 số cuối của mã giao dịch chuyển
+                                        tiền
+                                        vào một trong
+                                        những số điện thoại sau :</p>
+                                    <table class="table table-borderless ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Số điện thoại</th>
+                                                <th scope="col">Cược tối đa</th>
+                                                <th scope="col">Cược tối thiểu</th>
+                                                <th scope="col">Giao dịch</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span class="full">100/100</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span class="full">100/100</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span>10/100</span></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="taixiu" role="tabpanel" aria-labelledby="taixiu-tab">
+                                <div class="tutorial border-main">
+                                    <h3 class="title">HƯỚNG DẪN CHƠI</h3>
+                                    <p class="intro">Chẵn lẻ là game tính kết quả bằng 1 số cuối của mã giao dịch chuyển
+                                        tiền
+                                        vào một trong
+                                        những số điện thoại sau :</p>
+                                    <table class="table table-borderless ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Số điện thoại</th>
+                                                <th scope="col">Cược tối đa</th>
+                                                <th scope="col">Cược tối thiểu</th>
+                                                <th scope="col">Giao dịch</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span class="full">100/100</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span class="full">100/100</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span>10/100</span></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="taixiu2" role="tabpanel" aria-labelledby="taixiu2-tab">
+                                <div class="tutorial border-main">
+                                    <h3 class="title">HƯỚNG DẪN CHƠI</h3>
+                                    <p class="intro">Chẵn lẻ là game tính kết quả bằng 1 số cuối của mã giao dịch chuyển
+                                        tiền
+                                        vào một trong
+                                        những số điện thoại sau :</p>
+                                    <table class="table table-borderless ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Số điện thoại</th>
+                                                <th scope="col">Cược tối đa</th>
+                                                <th scope="col">Cược tối thiểu</th>
+                                                <th scope="col">Giao dịch</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span class="full">100/100</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span class="full">100/100</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span>10/100</span></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="motphanba" role="tabpanel" aria-labelledby="motphanba-tab">
+                                <div class="tutorial border-main">
+                                    <h3 class="title">HƯỚNG DẪN CHƠI</h3>
+                                    <p class="intro">Chẵn lẻ là game tính kết quả bằng 1 số cuối của mã giao dịch chuyển
+                                        tiền
+                                        vào một trong
+                                        những số điện thoại sau :</p>
+                                    <table class="table table-borderless ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Số điện thoại</th>
+                                                <th scope="col">Cược tối đa</th>
+                                                <th scope="col">Cược tối thiểu</th>
+                                                <th scope="col">Giao dịch</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span class="full">100/100</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span class="full">100/100</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span>10/100</span></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="tong3so" role="tabpanel" aria-labelledby="tong3so-tab">
+                                <div class="tutorial border-main">
+                                    <h3 class="title">HƯỚNG DẪN CHƠI</h3>
+                                    <p class="intro">Chẵn lẻ là game tính kết quả bằng 1 số cuối của mã giao dịch chuyển
+                                        tiền
+                                        vào một trong
+                                        những số điện thoại sau :</p>
+                                    <table class="table table-borderless ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Số điện thoại</th>
+                                                <th scope="col">Cược tối đa</th>
+                                                <th scope="col">Cược tối thiểu</th>
+                                                <th scope="col">Giao dịch</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span class="full">100/100</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span class="full">100/100</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span>10/100</span></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="h3" role="tabpanel" aria-labelledby="h3-tab">
+                                <div class="tutorial border-main">
+                                    <h3 class="title">HƯỚNG DẪN CHƠI</h3>
+                                    <p class="intro">Chẵn lẻ là game tính kết quả bằng 1 số cuối của mã giao dịch chuyển
+                                        tiền
+                                        vào một trong
+                                        những số điện thoại sau :</p>
+                                    <table class="table table-borderless ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Số điện thoại</th>
+                                                <th scope="col">Cược tối đa</th>
+                                                <th scope="col">Cược tối thiểu</th>
+                                                <th scope="col">Giao dịch</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span class="full">100/100</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span class="full">100/100</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span>10/100</span></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="lo" role="tabpanel" aria-labelledby="lo-tab">
+                                <div class="tutorial border-main">
+                                    <h3 class="title">HƯỚNG DẪN CHƠI</h3>
+                                    <p class="intro">Chẵn lẻ là game tính kết quả bằng 1 số cuối của mã giao dịch chuyển
+                                        tiền
+                                        vào một trong
+                                        những số điện thoại sau :</p>
+                                    <table class="table table-borderless ">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Số điện thoại</th>
+                                                <th scope="col">Cược tối đa</th>
+                                                <th scope="col">Cược tối thiểu</th>
+                                                <th scope="col">Giao dịch</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span class="full">100/100</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span class="full">100/100</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row" class="phone">0123456789 <i class="fa-solid fa-play"></i></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td>10.000 <span class="vnd">VND</span></td>
+                                                <td><span>10/100</span></td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="tutorial-2">
+                            <h3 class="title">Làm mới sau <span>5s</span></h3>
+
+                            <div class="table-money border-main">
+                                <p class="intro">nội dung chuyển tiền là <span>c</span> hoặc <span>l</span> nếu số cuối
+                                    mã
+                                    giao dịch là các số sau</p>
+                                <table class="table table-borderless ">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Nội dung</th>
+                                            <th scope="col">1 số cuối</th>
+                                            <th scope="col">Tiền nhận</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><span>C</span></td>
+                                            <td>
+                                                <span>2</span>
+                                                <span>4</span>
+                                                <span>6</span>
+                                                <span>8</span>
+                                            </td>
+                                            <td class="money">X 2.36</td>
+                                        </tr>
+                                        <tr>
+                                            <td><span>L</span></td>
+                                            <td>
+                                                <span>1</span>
+                                                <span>3</span>
+                                                <span>5</span>
+                                                <span>7</span>
+                                            </td>
+                                            <td class="money">X 2.36</td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="note">lưu ý: số tiền đặt nhỏ nhất của c và l là 10.000 vnd và tối đa là
+                                1.000.000 vnd tiền thắng sẽ bằng số tiền đặt *2.36
+                                <br>
+                                vd: 100.000 sẽ ăn 236.000
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Ho tro -->
+                    <div class="tab-pane fade" id="pills-support" role="tabpanel" aria-labelledby="support-tab">
+                        <h3 class="tab-name">Trung tâm hỗ trợ</h3>
+                        <div class="transaction border-main">
+                            <form class="check-code" action="">
+                                <h3>Kiểm tra mã giao dịch</h3>
+                                <p class="note">nếu quá 15 phút chưa nhận được tiền vui lòng
+                                    nhập mã vào đây để kiểm tra</p>
+                                <div class="form-group">
+                                    <label for="code">nhập mã giao dịch</label>
+                                    <div class="form-group-icon">
+                                        <i class="fa-solid fa-magnifying-glass"></i>
+                                        <input type="text" name="code" id="code" placeholder="Mã giao dịch vd: 123456789">
+                                    </div>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary btn-check" type="submit">Kiểm tra</button>
+                                </div>
+                                <div>
+                                    <a href="#" class="btn btn-primary contact-admin">Liên hệ Admin báo lỗi</a>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="contact border-main">
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary">Chat với Admin</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary">Nhóm chat Zalo</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary">Nhóm chat Telegram</a>
+                            </div>
+                            <div class="text-center">
+                                <a href="#" class="btn btn-primary">Facebook Admin</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bang xep hang -->
+                    <div class="tab-pane fade" id="pills-rank" role="tabpanel" aria-labelledby="rank-tab">
+                        <h3 class="tab-name">Bảng xếp hạng</h3>
+                        <img src="./assets/images/cup.png" alt="">
+                        <h3 class="top-rank">Top thắng tuần</h3>
+                        <div class="border-main">
+                            <table class="table table-borderless  ">
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Top 1</th>
+                                        <th scope="col">Số điện thoại</th>
+                                        <th scope="col">Tổng cược</th>
+                                        <th scope="col">Phần Thưởng</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row" class="top-1"><span class="d-none"></span></th>
+                                        <td>0.123.456.789</td>
+                                        <td>10.000<span class="unit"> M</span></td>
+                                        <td>10.000<span class="vnd"> VND</span></td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row" class="top-number">2</th>
+                                        <td>0.123.456.789</td>
+                                        <td>10.000<span class="unit"> M</span></td>
+                                        <td>10.000<span class="vnd"> VND</span></td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <p class="note">top sẼ được trao giải vào 24h chủ nhật hàng tuần</p>
+                    </div>
+                    <!-- Gioi thieu -->
+                    <div class="tab-pane fade" id="pills-intro" role="tabpanel" aria-labelledby="intro-tab">
+                        <h3 class="tab-name">Giới thiệu</h3>
+                        <div class="content border-main">nội dung</div>
+                    </div>
+                </div>
+                <!-- Menu tab -->
+                <ul class="nav nav-pills" id="main-menu" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link active" id="home-tab" data-toggle="pill" href="#pills-home" role="tab"
+                            aria-controls="pills-home" aria-selected="true">
+                            <img src="./assets/images/icon/home.svg" alt="icon">
+                            HOME</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="support-tab" data-toggle="pill" href="#pills-support" role="tab"
+                            aria-controls="pills-support" aria-selected="false">
+                            <img src="./assets/images/icon/support.svg" alt="">
+                            Hỗ trợ</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="rank-tab" data-toggle="pill" href="#pills-rank" role="tab"
+                            aria-controls="pills-rank" aria-selected="false">
+                            <img src="./assets/images/icon/rank.svg" alt="">
+                            BXH
+                        </a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="intro-tab" data-toggle="pill" href="#pills-intro" role="tab"
+                            aria-controls="pills-intro" aria-selected="false">
+                            <img src="./assets/images/icon/intro.svg" alt="">
+                            Giới thiệu</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
     <!-- JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
 </body>
+
 </html>
